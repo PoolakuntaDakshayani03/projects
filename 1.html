@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <style>
+            body { 
+                font-family: Georgia, 'Times New Roman', Times, serif; 
+                margin: 0;
+            }
+            header {
+                background: #de0c2f; 
+                color: blue; 
+                padding: 15px; 
+                text-align: center;
+            }
+            nav ul {
+                display: flex; 
+                list-style: none; 
+                justify-content: center; 
+                padding: 20px;
+            }
+            nav li {
+                margin: 0 15px; 
+                display: flex; 
+                justify-content: center; 
+                padding: 20px;
+            }
+            nav a {
+                color: aliceblue; 
+                text-decoration: none;
+            }
+            .container {
+                display: flex; 
+                flex-wrap: wrap; 
+                padding: 20px;
+            }
+            .card {
+                flex: 1 1 300px; 
+                margin: 10px; 
+                padding: 20px; 
+                border: 1px dashed blueviolet; 
+                border-radius: 16px;
+            }
+            footer {
+                background: cyan; 
+                color: black; 
+                text-align: center;
+            }
+            /* Media Queries */
+            @media (max-width: 600px) {
+                nav ul {
+                    flex-direction: column;
+                    align-items: center;
+                }
+                nav li {
+                    margin: 10px 0;
+                }
+                .card {
+                    flex: 1 1 100%;
+                    max-width: 100%;
+                }
+            }
+
+            @media (min-width: 601px) and (max-width: 1024px) {
+                .card {
+                    flex: 1 1 45%;
+                    max-width: 45%;
+                }
+            }
+
+            @media (min-width: 1025px) {
+                .card {
+                    flex: 1 1 30%;
+                    max-width: 30%;
+                }
+            }
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="head">
+                <h1>P Dakshayani</h1>
+            </div>
+            <div>
+                <nav>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Project</a></li>
+                        <li><a href="#">Education details</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <div class="card">
+                    <h1>Project 1</h1>
+                    Random number generation
+                </div>
+                <div class="card">
+                    <h1>Project 2</h1>
+                    E-commerce website
+                </div>
+                <div class="card">
+                    <h1>Project 3</h1>
+                    Tic Tac Toe game
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div><span>&copy; IBM Pvt. Limited</span></div>
+        </footer>
+    </body>
+</html>
