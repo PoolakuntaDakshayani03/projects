@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Alternative Responsive Header</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f5f7fa;
+    }
+
+    header {
+      background: #282c34;
+      color: #fff;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      cursor: default;
+      flex: 1 1 100%;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    nav {
+      display: flex;
+      gap: 25px;
+      flex: 1 1 100%;
+      justify-content: center;
+    }
+
+    nav a {
+      color: #61dafb;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 8px 16px;
+      border-radius: 30px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #61dafb;
+      color: #282c34;
+      box-shadow: 0 4px 8px rgba(97, 218, 251, 0.5);
+    }
+
+    /* Large screens - place logo left, nav right horizontally */
+    @media (min-width: 700px) {
+      .container {
+        flex-wrap: nowrap;
+      }
+
+      .logo {
+        flex: 0 0 auto;
+        text-align: left;
+        margin-bottom: 0;
+      }
+
+      nav {
+        flex: 0 0 auto;
+        justify-content: flex-end;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">my logo</div>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Courses</a>
+        <a href="#">Contact</a>
+      </nav>
+    </div>
+  </header>
+</body>
+</html>

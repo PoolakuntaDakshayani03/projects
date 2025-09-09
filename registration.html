@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta char="utf-8">
+    <meta name="viewport" content="width=device-width",initial-scale=1.0>
+    <title>Registration form</title>
+</head>
+<style>
+    body{
+        font-family: Arial;
+        background:cyan;
+        margin:0;
+        padding:0;
+        align-items: center;
+        min-height: 100vh;
+    }
+    .form-container{
+        width: 90%;
+        max-width: 600px;
+        background:azure;
+        padding: ;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(pink);
+        align: center;
+    }
+    .form-name{
+
+    }
+    .row{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 2px;
+        margin: 12px;
+        align-items: center;
+
+    }
+    label{
+
+    }
+    input select{
+        transition: border-color 0.3s;
+        align:center;
+    }
+    input:focus select:focus{
+        border-color:blue;
+    }
+    button:hover{
+        background:yellow;
+    }
+</style>
+<body>
+    <div class="form-container">
+        <div>  <h1>Registration form</h1></div>
+        <div>
+            <form>
+                <div class="row">
+                    <label for="name">name</label>
+                    <input type ="text" placeholder="enter your name " id="name" required>
+                </div>
+                <div class="row">
+                    <label for="email">email</label>
+                    <input type ="email" placeholder="enter your mail id " id="mail" required>
+                </div>
+                <div class="row">
+                    <label for="gender">gender</label>
+                    <select name ="gender" id="gender" required>
+                        <option>
+                            male
+                        </option>
+                        <option>
+                            Female
+                        </option>
+                        <option>
+                           other
+                        </option>
+                        </select>
+                </div>
+                <div class="row">
+                    <label>Hobbies:</label><br>
+                  
+                    <input type="checkbox" id="hobby-reading" name="hobbies" value="reading" required>
+                    <label for="hobby-reading">Reading</label>
+                  
+                    <input type="checkbox" id="hobby-movies" name="hobbies" value="watching movies" required>
+                    <label for="hobby-movies">Watching Movies</label>
+                  
+                    <input type="checkbox" id="hobby-sleeping" name="hobbies" value="sleeping" required>
+                    <label for="hobby-sleeping">Sleeping</label>
+                  
+                    <input type="checkbox" id="hobby-music" name="hobbies" value="listening music" required>
+                    <label for="hobby-music">Listening Music</label>
+                </div>
+                    <label for="password">hobbies</label>
+                    <input type ="password" placeholder="enter your password" id="password" required>
+                </div>
+                <input type="button" value="submit">
+            </form>
+        
+        </div>
+</body>
+</html>
